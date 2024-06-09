@@ -29,15 +29,12 @@
     <div class="loader"></div>
   </div>
   <header id="home">
-    <h1><a id="link" href="javascript:void(0);" onclick="scrollToTop();"><strong>Portfolio</strong></a></h1>
+    <h1><a id="link" href="{{ url_for('portfolio') }}" onclick="scrollToTop();"><strong>Portfolio</strong></a></h1>
     
     <!--　　　　　ページ内遷移メニュー　　　　　-->
     <nav class="navbar">
         <ul>
-            <li><a id="link_home" href="{{ url_for('portfolio') }}" onclick="scrollToTop();">Home</a></li>
-            <li><a id="link_about" href="javascript:void(0);" onclick="ScrollWindow('about');">About</a></li>
-            <li><a id="link_service" href="javascript:void(0);" onclick="ScrollWindow('service');">Service</a></li>
-            <li><a id="link_skills" href="javascript:void(0);" onclick="ScrollWindow('skills');">Skills</a></li>
+            
         </ul>
     </nav>  
     
@@ -81,12 +78,17 @@
         <div class="cd-timeline__content text-component">
           <h2>ロボット競技大会全国出場</h2>
           <p class="color-contrast-medium">
-            出場者が全員私より年上だったことから、同じようにしても経験の差から負けてしまうと考えました。そこで周りが攻撃型のロボットを作る中、自分だけ防御型のロボットを作り、ひたすら守る戦略を貫きました。守り抜いた後、カウンターをくらわす戦略が見事に成功しました。結果、大阪大会では優勝することができ、全国大会に出場しました。差別化が大切だと学ぶとともに、差別化をするためには周りを観察して分析する必要があると気付くことができました。
+            芝浦工業大学主催のロボット競技大会にて、大阪大会を優勝し全国大会へ出場しました。
+            出場者が全員私より年上だったことから、同じようにしても経験の差から負けてしまうと考えました。
+            そこで周りが攻撃型のロボットを作る中、自分だけ防御型のロボットを作り、
+            ひたすら守る戦略を貫きました。守り抜いた後、カウンターをくらわす戦略が見事に成功しました。
+            差別化が大切だと学ぶとともに、
+            差別化をするためには周りを観察して分析する必要があると気付くことができました。
           </p>
 
           <div class="flex justify-between items-center">
             <span class="cd-timeline__date">Jan 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
@@ -102,7 +104,7 @@
 
           <div class="flex justify-between items-center">
             <span class="cd-timeline__date">Jan 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
@@ -175,8 +177,27 @@
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content text-component">
-          <h2>研究室配属</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+          <h2>受講生850名、修了率15.4%の他大学のデータ分析講座を修了</h2>
+          <p class="color-contrast-medium">
+            1年生時に上級生と大学院生に混ざり、受講者896人中、
+            修了率15.4%の他大学のデータ分析講座を修了しました。
+            講座は半年間の講義とKaggle形式のコンペが3度行われました。
+            講義のみでは難しく三段階のアプローチで修了にこぎつけました。
+            <br><br>
+            一段階目に、専門書で自習し不明点を補おうとしました。
+            宿題にさえ苦労しましたが、未知の技術を能動的に学び、
+            自分で解釈する達成感を得ることができました。
+            二段階目に、過去の修了者を探し、初対面の遥か年上の大学院生の研究室に飛び込みました。
+            雑談を糸口に人間関係を構築し、
+            「可視化したデータの解釈」と「最適モデルの判断」に関する経験則を傍で学びました。
+            知見を共有してもらい感謝するとともに、私も人をサポートできる存在になりたいと考えました。
+            三段階目に、教授に経緯と熱意を訴え、指導を依頼しました。
+            効率的に質問するため、不明点を整理・細分化し、
+            どうしても教授に指導を受けたい強い思いを込めて臨みました。
+            悩み過ぎず、状況を整理し、積極的に質問する大切さを学びました。
+            <br><br>
+            上記三段階の努力で修了率の低い講座をやり抜くことができました。
+            この経験により、困難に際し周囲を巻き込み「突破口を見いだす行動力」を得ました。</p>
 
           <div class="flex justify-between items-center">
             <span class="cd-timeline__date">Feb 18</span>
