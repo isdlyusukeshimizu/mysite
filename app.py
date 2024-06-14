@@ -15,7 +15,8 @@ def torikumi():
 @app.route('/docker_lec')
 def docker_lec():
     return render_template('docker_lec.html')
-    
+
+#画像ファイル
 @app.route('/media/<path:filename>')
 def media_files(filename):
     return send_from_directory('media', filename)
