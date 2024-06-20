@@ -6,7 +6,7 @@ app = Flask(__name__)
 def portfolio():
     return render_template('portfolio.html')
 
-
+#取り組み内容を表示するページ
 @app.route('/torikumi')
 def torikumi():
     return render_template('torikumi.html')
